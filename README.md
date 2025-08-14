@@ -5,6 +5,16 @@
 Bugoons is an AI-powered tool that reviews your JavaScript code, identifies bugs, suggests improvements, and even refactors your code with a single click.
 Whether you paste your code, upload a file, or pull directly from GitHub, Refactora analyzes it for security, performance, and style, then provides a clean, refactored version along with a visual diff.
 
+**Features**
+
+- **AI Code Review** – Detects bugs, performance issues, and code smells
+- **One-Click Refactor** – Automatically rewrites code using best practices
+- **Code Diff View** – Side-by-side comparison of original and refactored code
+- **File & GitHub Repo Support** – Upload .js files or pull code directly from a repository
+- **Authentication** – Secure login and personalized review history
+- **Flexible AI Backend** – Supports Gemini, OpenAI, Claude, and more
+- **Review History** – Revisit and re-download past code reviews
+
 **Key principles followed**
 
 - **Modularity:** Code is logically separated into self-contained modules for easier maintenance and development.
