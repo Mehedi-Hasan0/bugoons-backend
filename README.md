@@ -40,5 +40,3 @@ Whether you paste your code, upload a file, or pull directly from GitHub, Refact
 1. Clone this repository.
 2. Install dependencies (`npm install`)
 3. Basic env - `NODE_ENV`, `PORT`, `DATABASE_URL`.
-4. Review and customize configuration files as needed.
-5. Refer to the documentation within each folder for guidance on how to build out your application.
