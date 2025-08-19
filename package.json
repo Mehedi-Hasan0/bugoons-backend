@@ -16,7 +16,7 @@
       "eslint --fix --no-warn-ignored",
       "prettier --write"
     ]
-  },  
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -39,7 +39,10 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "http-status": "^2.1.0",
     "mongoose": "^8.14.0"
-  }  
+  }
 }

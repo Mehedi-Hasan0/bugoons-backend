@@ -1,8 +1,9 @@
 // src/index.ts
 import express, { Request, Response, Application } from 'express';
+import config from './config';
 
 const app: Application = express();
-const port = 8000;
+const port = config.port;
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Welcome to Bugoons Server');
