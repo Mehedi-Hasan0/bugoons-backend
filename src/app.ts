@@ -1,9 +1,9 @@
-// src/index.ts
 import express, { Request, Response, Application, NextFunction } from 'express';
 import config from './config';
 import cors, { CorsOptions } from 'cors';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 const app: Application = express();
 const port = config.port;
@@ -29,7 +29,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 // global error handler
-// app.use(globalErrorHandler);
+app.use(globalErrorHandler);
 
 // not found routes
 app.use((req: Request, res: Response, next: NextFunction) => {

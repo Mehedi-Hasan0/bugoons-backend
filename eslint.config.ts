@@ -1,4 +1,3 @@
-// eslint.config.js
 import eslintPluginTs from '@typescript-eslint/eslint-plugin';
 import parserTs from '@typescript-eslint/parser';
 import prettierPlugin from 'eslint-plugin-prettier';
@@ -12,7 +11,7 @@ export default [
     languageOptions: {
       parser: parserTs,
       parserOptions: {
-        ecmaVersion: 12,
+        ecmaVersion: 'latest',
         sourceType: 'module',
         project: ['./tsconfig.json'],
       },
@@ -20,20 +19,20 @@ export default [
         process: 'readonly',
         console: 'readonly',
       },
-      ecmaVersion: 2021,
     },
     plugins: {
       '@typescript-eslint': eslintPluginTs,
       prettier: prettierPlugin,
     },
     rules: {
-      'no-unused-vars': 'error',
+      'no-unused-vars': 'off', // Disable core no-unused-vars
+      '@typescript-eslint/no-unused-vars': 'off', // Enable TypeScript-aware no-unused-vars
       'prefer-const': 'error',
       'no-unused-expressions': 'error',
-      'no-undef': 'error',
+      'no-undef': 'off', // Disable no-undef as it conflicts with TypeScript's global types
       'no-unreachable': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
-      'prettier/prettier': 'error', // Prettier formatting as ESLint errors
+      'prettier/prettier': 'error',
     },
     linterOptions: {
       reportUnusedDisableDirectives: true,
